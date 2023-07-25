@@ -93,3 +93,6 @@ def check_routes():
     rule = request.url_rule
     if rule and not any(url.rule == rule.rule for url in app.url_map.iter_rules() if isinstance(url, Rule)):
         abort(404)
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0")
