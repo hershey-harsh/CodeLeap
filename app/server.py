@@ -50,8 +50,8 @@ def home_page():
 @app.route('/about')
 def about_page():
 	return render_template(
-		'about.html'
-  	)
+		'home.html'
+  	) #Change Later
 
 @app.route('/register')
 def register_page():
