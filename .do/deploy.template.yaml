@@ -1,0 +1,8 @@
+spec:
+  name: codeleap
+  services:
+  - environment_slug: python
+    git:
+      branch: main
+      repo_clone_url: https://github.com/hershey-harsh/codeleap.git
+    name: codeleap
