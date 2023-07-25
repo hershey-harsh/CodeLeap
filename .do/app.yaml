@@ -1,8 +1,0 @@
-name: codeleap
-services:
-- environment_slug: python
-  github:
-    branch: main
-    deploy_on_push: true
-    repo: hershey-harsh/codeleap
-  name: codeleap
