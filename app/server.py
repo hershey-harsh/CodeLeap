@@ -68,7 +68,10 @@ def register():
         # Send email with Zoom meeting URL
         send_zoom_url_email(name, email)
 
-        return "Email sent successfully!"
+        return render_template(
+	    	'register.html',
+            registered=True
+  	    )
 
 @app.route('/faq')
 def faq_page():
